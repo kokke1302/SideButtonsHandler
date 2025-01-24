@@ -1,0 +1,24 @@
+{
+	"dbRight": {
+		"onoff": true,
+		"term": 600
+	},
+
+	"newTab": {
+		"url": null,
+		"forcas": true,
+		"next": "btm",
+		"nexts": ["top", "btm", "up", "dwn"]
+	},
+	"delTab":{
+		"pinmo": true,
+		"next": "last",
+		"nexts": ["last", "up", "dwm"]
+	},
+	"upTab": {
+		"cicle": false
+	},
+	"dwnTab": {
+		"cicle": false
+	}
+}

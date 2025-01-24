@@ -1,0 +1,33 @@
+{
+  "manifest_version": 3,
+  "name": "Mouse Controller",
+  "version": "1.0.0",
+  "description": "Set the action that occurs when you press two buttons at the same time.",
+  "icons": {
+    "16": "images/icon-16.png",
+    "32": "images/icon-32.png",
+    "48": "images/icon-48.png",
+    "128": "images/icon-128.png"
+	},
+
+	"permissions": [
+		"storage"
+	],
+
+	"content_scripts": [
+		{
+			"matches": ["<all_urls>"],
+			"js": ["front/index.js"]
+		}
+	],
+
+	"background": {
+		"service_worker": "back/background.js",
+		"type": "module"
+	},
+
+	"web_accessible_resources": [{
+		"matches": ["<all_urls>"],
+		"resources": ["default.json"]
+		}]
+}
