@@ -1,6 +1,6 @@
 {
   "manifest_version": 3,
-  "name": "Mouse Controller",
+  "name": "SideButtonsHandler",
   "version": "1.0.0",
   "description": "Set the action that occurs when you press two buttons at the same time.",
   "icons": {
